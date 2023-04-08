@@ -6,7 +6,7 @@ int state3 = LOW;
 int state4 = LOW;
 
 void setup() {
-  // set the digital pin as output:
+
   pinMode(6, OUTPUT);
   pinMode(5, OUTPUT);
   pinMode(3, OUTPUT);
@@ -16,7 +16,7 @@ void setup() {
 const long interval1 = 50;
 const long interval2 = 100;
 const long interval3 = 1000;
-const long interval4 = 10000;  // interval at which to blink (milliseconds)
+const long interval4 = 10000;  
 
   taskid_t taskpin3 = taskManager.scheduleFixedRate(interval1, [] {
     if (state1 == LOW) {
